@@ -6,7 +6,7 @@ webpackJsonp([0],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helados_helados__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bebidas_bebidas__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__login_login__ = __webpack_require__(102);
@@ -56,7 +56,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\home\home.html"*/'<ion-split-pane when="lg">\n\n  <ion-menu [content]="content">\n\n\n\n    <ion-list no-lines>\n\n      <ion-list-header>Menu</ion-list-header>\n\n      <button menuClose ion-item *ngFor="let m of menuOpc; index as i" (click)="setContent(i)"> \n\n        <ion-icon [name]="m.icon" margin-right></ion-icon> {{m.label}}\n\n      </button>\n\n      <ion-list-header>Perfil</ion-list-header>\n\n      <button ion-item (click)="logout()"> <ion-icon name="md-exit" margin-right></ion-icon>Cerrar Sesion</button>\n\n    </ion-list>\n\n\n\n  </ion-menu>\n\n  <ion-nav [root]="root" main #content></ion-nav>\n\n</ion-split-pane>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\home\home.html"*/'<ion-split-pane when="lg">\n\n  <ion-menu [content]="content">\n\n\n\n    <ion-list no-lines>\n\n      <ion-list-header>Menu</ion-list-header>\n\n      <button menuClose ion-item *ngFor="let m of menuOpc; index as i" (click)="setContent(i)"> \n\n        <ion-icon [name]="m.icon" margin-right></ion-icon> {{m.label}}\n\n      </button>\n\n      <ion-list-header>Perfil</ion-list-header>\n\n      <button ion-item (click)="logout()"> <ion-icon name="md-exit" margin-right></ion-icon>Cerrar Sesion</button>\n\n    </ion-list>\n\n\n\n  </ion-menu>\n\n  <ion-nav [root]="root" main #content></ion-nav>\n\n</ion-split-pane>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */]])
 ], HomePage);
@@ -120,7 +120,7 @@ HeladosDataProvider = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -153,7 +153,7 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\login\login.html"*/'<ion-content padding class="login-bg">\n\n  <div class="login-main">\n\n\n\n    <h1 class="login-title" text-right>Helados</h1>\n\n    <div class="login-form">\n\n      <ion-row>\n\n        <ion-col col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8>\n\n          <ion-item color="itemLight">\n\n            <ion-label floating color="light">Email</ion-label>\n\n            <ion-input type="email" name="email"></ion-input>\n\n          </ion-item>\n\n        </ion-col>\n\n        <ion-col col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 margin-top>\n\n          <ion-item color="itemLight">\n\n            <ion-label floating color="light">Contraseña</ion-label>\n\n            <ion-input type="password" name="pass"></ion-input>\n\n          </ion-item>\n\n        </ion-col>\n\n      </ion-row>\n\n    </div>\n\n    <ion-row>\n\n      <button ion-col col-6 col-md-3 offset-md-6 col-lg-2 offset-lg-8 ion-button clear>Registrate</button>\n\n      <button ion-col col-6 col-md-3 col-lg-2 ion-button block (click)="login()">Entrar</button>\n\n    </ion-row>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\login\login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\login\login.html"*/'<ion-content padding class="login-bg">\n\n  <div class="login-main">\n\n\n\n    <h1 class="login-title" text-right>VacationSearch</h1>\n\n    <div class="login-form">\n\n      <ion-row>\n\n        <ion-col col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8>\n\n          <ion-item color="itemLight">\n\n            <ion-label floating color="light">Email</ion-label>\n\n            <ion-input type="email" name="email"></ion-input>\n\n          </ion-item>\n\n        </ion-col>\n\n        <ion-col col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 margin-top>\n\n          <ion-item color="itemLight">\n\n            <ion-label floating color="light">Contraseña</ion-label>\n\n            <ion-input type="password" name="pass"></ion-input>\n\n          </ion-item>\n\n        </ion-col>\n\n      </ion-row>\n\n    </div>\n\n    <ion-row>\n\n      <button ion-col col-6 col-md-3 offset-md-6 col-lg-2 offset-lg-8 ion-button clear>Registrate</button>\n\n      <button ion-col col-6 col-md-3 col-lg-2 ion-button block (click)="login()">Entrar</button>\n\n    </ion-row>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\login\login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */],
@@ -204,7 +204,7 @@ webpackEmptyAsyncContext.id = 151;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeladosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_helados_data_helados_data__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_helado_add_helado__ = __webpack_require__(196);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -238,7 +238,7 @@ var HeladosPage = (function () {
 }());
 HeladosPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-helados',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\helados\helados.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle icon-only > \n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Helados</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n  <ion-row>\n\n    <ion-col col-12 col-md-6 col-lg-4 *ngFor="let h of helados">\n\n      <ion-card >\n\n        <img src="{{h.imagen}}" alt="">\n\n        <ion-card-content>\n\n          <ion-card-title>{{h.nombre}}</ion-card-title>\n\n            <div><ion-icon name="logo-usd"></ion-icon> {{ h.precio}}</div>\n\n            <div><ion-icon name="people"></ion-icon> {{ h.porcion}}</div>\n\n        </ion-card-content>\n\n      </ion-card>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n  <ion-fab right bottom>\n\n    <button (click)="goToAdd()" ion-fab  color="secondary"><ion-icon name="add"></ion-icon></button>\n\n  </ion-fab>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\helados\helados.html"*/,
+        selector: 'page-helados',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\helados\helados.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <button ion-button menuToggle icon-only > \n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>Helados</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n  <ion-row>\n\n    <ion-col col-12 col-md-6 col-lg-4 *ngFor="let h of helados">\n\n      <ion-card >\n\n        <img src="{{h.imagen}}" alt="">\n\n        <ion-card-content>\n\n          <ion-card-title>{{h.nombre}}</ion-card-title>\n\n            <div><ion-icon name="logo-usd"></ion-icon> {{ h.precio}}</div>\n\n            <div><ion-icon name="people"></ion-icon> {{ h.porcion}}</div>\n\n        </ion-card-content>\n\n      </ion-card>\n\n    </ion-col>\n\n  </ion-row>\n\n\n\n  <ion-fab right bottom>\n\n    <button (click)="goToAdd()" ion-fab  color="secondary"><ion-icon name="add"></ion-icon></button>\n\n  </ion-fab>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\helados\helados.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */],
@@ -255,7 +255,7 @@ HeladosPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddHeladoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_helados_data_helados_data__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_helados_data_helado__ = __webpack_require__(270);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -286,7 +286,7 @@ var AddHeladoPage = (function () {
 }());
 AddHeladoPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-add-helado',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\add-helado\add-helado.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title>Agregar Helado</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <form #form="ngForm">\n\n    <ion-row margin-bottom>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Nombre</ion-label>\n\n        <ion-input name="nombre" type="text" required [(ngModel)]="helado.nombre"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Procion</ion-label>\n\n        <ion-input name="porcion" type="number" min="0" required \n\n        [(ngModel)]="helado.porcion"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Precio</ion-label>\n\n        <ion-input name="precio" type="number" min="0" required\n\n          [(ngModel)]="helado.precio"\n\n        ></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Imagen</ion-label>\n\n        <ion-input name="imagen" type="text" required\n\n          [(ngModel)]="helado.imagen"\n\n        ></ion-input>\n\n      </ion-item>\n\n\n\n    </ion-row>\n\n\n\n  </form>\n\n  <button margin-top ion-button color="secondary" [disabled]="!form.valid" (click)="save()">Agregar</button>\n\n\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\add-helado\add-helado.html"*/,
+        selector: 'page-add-helado',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\add-helado\add-helado.html"*/'<ion-header>\n\n\n\n  <ion-navbar color="primary">\n\n    <ion-title>Agregar Helado</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <form #form="ngForm">\n\n    <ion-row margin-bottom>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Nombre</ion-label>\n\n        <ion-input name="nombre" type="text" required [(ngModel)]="helado.nombre"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Procion</ion-label>\n\n        <ion-input name="porcion" type="number" min="0" required \n\n        [(ngModel)]="helado.porcion"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Precio</ion-label>\n\n        <ion-input name="precio" type="number" min="0" required\n\n          [(ngModel)]="helado.precio"\n\n        ></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item ion-col col-12 col-md-6>\n\n        <ion-label floating>Imagen</ion-label>\n\n        <ion-input name="imagen" type="text" required\n\n          [(ngModel)]="helado.imagen"\n\n        ></ion-input>\n\n      </ion-item>\n\n\n\n    </ion-row>\n\n\n\n  </form>\n\n  <button margin-top ion-button color="secondary" [disabled]="!form.valid" (click)="save()">Agregar</button>\n\n\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\add-helado\add-helado.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */],
         __WEBPACK_IMPORTED_MODULE_2__providers_helados_data_helados_data__["a" /* HeladosDataProvider */]])
@@ -302,7 +302,7 @@ AddHeladoPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BebidasPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -332,7 +332,7 @@ var BebidasPage = (function () {
 }());
 BebidasPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-bebidas',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\bebidas\bebidas.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle icon-only> \n\n          <ion-icon name=\'menu\'></ion-icon>  \n\n    </button>\n\n    <ion-title>Bebidas</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\pages\bebidas\bebidas.html"*/,
+        selector: 'page-bebidas',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\bebidas\bebidas.html"*/'<ion-header>\n\n\n\n  <ion-navbar>\n\n    <button ion-button menuToggle icon-only> \n\n          <ion-icon name=\'menu\'></ion-icon>  \n\n    </button>\n\n    <ion-title>Bebidas</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\bebidas\bebidas.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
 ], BebidasPage);
@@ -362,7 +362,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(49);
@@ -373,12 +373,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_bebidas_bebidas__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_add_helado_add_helado__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__providers_helados_data_helados_data__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_paquete_paquete__ = __webpack_require__(271);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -405,21 +407,25 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_9__pages_helados_helados__["a" /* HeladosPage */],
             __WEBPACK_IMPORTED_MODULE_10__pages_bebidas_bebidas__["a" /* BebidasPage */],
             __WEBPACK_IMPORTED_MODULE_11__pages_add_helado_add_helado__["a" /* AddHeladoPage */],
-            __WEBPACK_IMPORTED_MODULE_7__pages_login_login__["a" /* LoginPage */]
+            __WEBPACK_IMPORTED_MODULE_7__pages_login_login__["a" /* LoginPage */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_paquete_paquete__["a" /* PaquetePage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */]),
             __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["a" /* IonicStorageModule */].forRoot()
         ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+        bootstrap: [
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]
+        ],
         entryComponents: [
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
             __WEBPACK_IMPORTED_MODULE_7__pages_login_login__["a" /* LoginPage */],
             __WEBPACK_IMPORTED_MODULE_9__pages_helados_helados__["a" /* HeladosPage */],
             __WEBPACK_IMPORTED_MODULE_11__pages_add_helado_add_helado__["a" /* AddHeladoPage */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_bebidas_bebidas__["a" /* BebidasPage */]
+            __WEBPACK_IMPORTED_MODULE_10__pages_bebidas_bebidas__["a" /* BebidasPage */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_paquete_paquete__["a" /* PaquetePage */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -440,7 +446,7 @@ AppModule = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(49);
@@ -477,7 +483,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\008_HeladosIONIC\HeladosIonic\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
         __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]])
@@ -503,6 +509,51 @@ var Helado = (function () {
 }());
 
 //# sourceMappingURL=helado.js.map
+
+/***/ }),
+
+/***/ 271:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PaquetePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the PaquetePage page.
+ *
+ * See http://ionicframework.com/docs/components/#navigation for more info
+ * on Ionic pages and navigation.
+ */
+var PaquetePage = (function () {
+    function PaquetePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    PaquetePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad PaquetePage');
+    };
+    return PaquetePage;
+}());
+PaquetePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-paquete',template:/*ion-inline-start:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\paquete\paquete.html"*/'<!--\n  Generated template for the PaquetePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Paquete</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"F:\UNICAUCA\00_MOVILES-Dario Fernando Chamorro Vela\000_Proyecto_VacationSearch\VacationSearch\src\pages\paquete\paquete.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
+], PaquetePage);
+
+//# sourceMappingURL=paquete.js.map
 
 /***/ })
 
