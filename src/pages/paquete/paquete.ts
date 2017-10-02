@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the PaquetePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import { PaqueteDataProvider } from '../../providers/paquetes-data/paquetes-data';
+import { Paquete } from '../../providers/paquetes-data/paquete';
+import { AddPaquetePage } from '../add-paquete/add-paquete';
 
 @Component({
   selector: 'page-paquete',
@@ -14,11 +10,21 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class PaquetePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  paquetes:Paquete[] = [];
+
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public service: PaqueteDataProvider) {
+      this.paquetes = service.data;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaquetePage');
   }
 
+  goToAdd() {
+    this.navCtrl.parent.push(AddPaquetePage);
+  }
+  
 }

@@ -8,22 +8,28 @@ import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
+import { AddPaquetePage } from '../pages/add-paquete/add-paquete';
+import { PaqueteDataProvider } from '../providers/paquetes-data/paquetes-data';
+
 import { HeladosPage } from '../pages/helados/helados';
 import { BebidasPage } from '../pages/bebidas/bebidas';
 import { AddHeladoPage } from '../pages/add-helado/add-helado';
 import { HeladosDataProvider } from '../providers/helados-data/helados-data';
 
-import { PaquetePage} from '../pages/paquete/paquete';
+import { PaquetePage } from '../pages/paquete/paquete';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    PaquetePage,
+    AddPaquetePage,
+
     HeladosPage,
     BebidasPage,
     AddHeladoPage,
-    LoginPage,
-    PaquetePage
+    LoginPage
+
   ],
 
   imports: [
@@ -40,15 +46,20 @@ import { PaquetePage} from '../pages/paquete/paquete';
     MyApp,
     HomePage,
     LoginPage,
+    PaquetePage,
+    AddPaquetePage,
+
     HeladosPage,
     AddHeladoPage,
-    BebidasPage,
-    PaquetePage
+    BebidasPage
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
+    PaqueteDataProvider,
+
     HeladosDataProvider
   ]
 })

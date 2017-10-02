@@ -1,31 +1,33 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HeladosPage } from '../helados/helados';
-import { BebidasPage } from '../bebidas/bebidas';
 import { LoginPage } from '../login/login';
 import { Storage } from '@ionic/storage';
+import { PaquetePage } from '../paquete/paquete';
+
+import { BebidasPage } from '../bebidas/bebidas';
+
+
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  root: any = HeladosPage;
+  root: any = PaquetePage;
 
   menuOpc: Menu[] = [
     { label: 'Inicio', icon: 'home' },
-    { label: 'Bebidas', icon: 'md-beer' },
-    { label: 'Pizza', icon: 'md-pizza' },
-    { label: 'Comida', icon: 'md-restaurant' },
-    { label: 'Cafes', icon: 'md-pint' },
-    { label: 'Bar', icon: 'md-wine' }
+    { label: 'Notificaciones', icon: 'notifications' },
+    { label: 'Lista de deseos', icon: 'heart' },
+    { label: 'Mi cuenta', icon: 'contact' },
+    { label: 'Información', icon: 'information-circle' }
   ];
 
-  constructor(public navCtrl: NavController, public storage:Storage) { }
+  constructor(public navCtrl: NavController, public storage: Storage) { }
 
   setContent(index: number) {
     if (index == 0) {
-      this.root = HeladosPage;
+      this.root = PaquetePage;
     } else {
       this.root = BebidasPage;
     }
@@ -33,7 +35,7 @@ export class HomePage {
 
   logout() {
     this.storage.set("logged", false);
-    this.navCtrl.setRoot(LoginPage);    
+    this.navCtrl.setRoot(LoginPage);
   }
 
 }
