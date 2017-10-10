@@ -10,13 +10,16 @@ import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { AddPaquetePage } from '../pages/add-paquete/add-paquete';
 import { PaqueteDataProvider } from '../providers/paquetes-data/paquetes-data';
+import { PaquetePage } from '../pages/paquete/paquete';
+//adiciones para trabajar con SQLite
+import { DatabaseConnectionProvider } from '../providers/database-connection/database-connection';
+import { PaqueteDaoProvider } from '../providers/paquetes-data/paquete-dao';
 
 import { HeladosPage } from '../pages/helados/helados';
 import { BebidasPage } from '../pages/bebidas/bebidas';
 import { AddHeladoPage } from '../pages/add-helado/add-helado';
 import { HeladosDataProvider } from '../providers/helados-data/helados-data';
 
-import { PaquetePage } from '../pages/paquete/paquete';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,11 @@ import { PaquetePage } from '../pages/paquete/paquete';
     HomePage,
     PaquetePage,
     AddPaquetePage,
-
+//pendiente de eliminar
     HeladosPage,
     BebidasPage,
     AddHeladoPage,
     LoginPage
-
   ],
 
   imports: [
@@ -59,6 +61,9 @@ import { PaquetePage } from '../pages/paquete/paquete';
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     PaqueteDataProvider,
+    //agregando los providers de SQLite
+    DatabaseConnectionProvider,
+    PaqueteDaoProvider,
 
     HeladosDataProvider
   ]

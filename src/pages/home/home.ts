@@ -3,9 +3,13 @@ import { NavController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { Storage } from '@ionic/storage';
 import { PaquetePage } from '../paquete/paquete';
+// paquetes
+import { AddPaquetePage } from '../add-paquete/add-paquete';
+import { PaqueteDaoProvider } from '../../providers/paquetes-data/paquete-dao';
+import { Paquete } from '../../providers/paquetes-data/paquete';
 
+//borrar
 import { BebidasPage } from '../bebidas/bebidas';
-
 
 
 @Component({
@@ -13,6 +17,9 @@ import { BebidasPage } from '../bebidas/bebidas';
   templateUrl: 'home.html'
 })
 export class HomePage {
+
+  paquetes: Paquete[] = [];
+
   root: any = PaquetePage;
 
   menuOpc: Menu[] = [
@@ -23,7 +30,7 @@ export class HomePage {
     { label: 'Información', icon: 'information-circle' }
   ];
 
-  constructor(public navCtrl: NavController, public storage: Storage) { }
+  constructor(public navCtrl: NavController, public dao:PaqueteDaoProvider, public storage: Storage) { }
 
   setContent(index: number) {
     if (index == 0) {
@@ -38,9 +45,25 @@ export class HomePage {
     this.navCtrl.setRoot(LoginPage);
   }
 
+  loadPaquetes() {
+    this.dao.all()
+      .then(data => this.paquetes = data);
+  }
+
+  goToAdd(){
+    this.navCtrl.push(AddPaquetePage);
+  }
+
+  //Se invoca cada que la pantalla es visible
+  ionViewDidEnter() {
+    this.dao.ready()
+      .then(() => this.loadPaquetes());
+  }
+
 }
 
 interface Menu {
   label: string;
   icon: string;
 }
+

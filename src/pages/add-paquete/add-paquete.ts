@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { PaqueteDataProvider } from '../../providers/paquetes-data/paquetes-data';
+//import { PaqueteDataProvider } from '../../providers/paquetes-data/paquetes-data';
+import { PaqueteDaoProvider } from '../../providers/paquetes-data/paquete-dao';
 import { Paquete } from '../../providers/paquetes-data/paquete';
 
 @Component({
@@ -14,13 +15,17 @@ export class AddPaquetePage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public service:PaqueteDataProvider) {
-      this.paquete = new Paquete("",0,"","");
+    public dao: PaqueteDaoProvider
+    /*public service:PaqueteDataProvider*/) {
+//      this.paquete = new Paquete(0,"",0,"","");
+      this.paquete = new Paquete();
   }
 
   save(){
-    this.service.data.splice(0,0,this.paquete);
-    this.navCtrl.pop();    
+      this.dao.insert(this.paquete)
+      .then(res => this.navCtrl.pop());
+//    this.service.data.splice(0,0,this.paquete);
+//    this.navCtrl.pop();  
   }
 
 }
