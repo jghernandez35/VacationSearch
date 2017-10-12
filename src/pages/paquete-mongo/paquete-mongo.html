@@ -1,0 +1,36 @@
+<ion-header>
+  
+    <ion-navbar color="primary">
+      <button ion-button menuToggle icon-only > 
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title color="primary">Paquetes Mongo</ion-title>
+    </ion-navbar>
+  </ion-header>}
+  
+  <ion-content padding>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content
+        pullingText = "Deliza para recargar"
+        refreshingText="Recargando ..."
+      ></ion-refresher-content>
+    </ion-refresher>
+    <ion-row>
+      <ion-col col-12 col-md-6 col-lg-4 *ngFor="let p of paquetes">
+        <ion-card >
+          <img src="{{p.imagen}}" alt="">
+          <ion-card-content>
+            <ion-card-title>{{p.nombre}}</ion-card-title>
+              <div><ion-icon name="logo-usd"></ion-icon> {{ p.precio}}</div>
+              <div><ion-icon name="albums"></ion-icon> {{ p.descripcion}}</div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  
+    <ion-fab right bottom>
+      <button (click)="goToAdd()" ion-fab  color="secondary"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+  
+  
+  </ion-content>
