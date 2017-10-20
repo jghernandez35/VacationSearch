@@ -1,0 +1,19 @@
+
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>Descripción del paquete</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    
+    <ion-card-content>
+      <ion-card-title>Paquete seleccionado: {{PaqueteAuxM.nombre}}</ion-card-title>
+        <div><ion-icon name="logo-usd"></ion-icon> Precio: {{PaqueteAuxM.precio}}</div>
+        <div><ion-icon name="albums"></ion-icon> Descripción: {{PaqueteAuxM.descripcion}}</div>
+        <img src="{{this.PaqueteAuxM.imagen}}" alt="">           
+    </ion-card-content>
+  </ion-content>

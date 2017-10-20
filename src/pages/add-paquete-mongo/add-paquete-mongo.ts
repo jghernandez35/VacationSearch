@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ToastController } from 'ionic-angular';
 
 import { PaqueteMongoProvider } from '../../providers/paquetes-mongo/paquetes-mongo';
-import { Paquete } from '../../providers/paquetes-mongo/paqueteM';
+import { PaqueteM } from '../../providers/paquetes-mongo/paqueteM';
 
 @Component({
   selector: 'page-add-paquete-mongo',
@@ -10,14 +10,14 @@ import { Paquete } from '../../providers/paquetes-mongo/paqueteM';
 })
 export class AddPaqueteMongoPage {
 
-  paquete:Paquete;
+  paquete:PaqueteM;
 
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
     public service: PaqueteMongoProvider,
     public toastCtrl: ToastController){
-      this.paquete = new Paquete();
+      this.paquete = new PaqueteM();
   }
 
   save() {

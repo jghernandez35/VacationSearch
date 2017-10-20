@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ToastController } from 'ionic-angular';
 // imports para mongo
 import { AddPaqueteMongoPage } from '../add-paquete-mongo/add-paquete-mongo';
-import { Paquete } from '../../providers/paquetes-mongo/paqueteM';
+import { PaqueteM } from '../../providers/paquetes-mongo/paqueteM';
 import { PaqueteMongoProvider } from '../../providers/paquetes-mongo/paquetes-mongo';
+// imports para persistencia en SQLite
+import { PaqueteDaoProvider } from '../../providers/paquetes-data/paquete-dao';
+//import { PaqueteSQL } from '../../providers/paquetes-data/paquete';
+import { PaqueteviewmPage } from '../paqueteviewm/paqueteviewm';
 
 @Component({
   selector: 'page-paquete-mongo',
@@ -11,12 +15,14 @@ import { PaqueteMongoProvider } from '../../providers/paquetes-mongo/paquetes-mo
 })
 export class PaqueteMongoPage {
 
-  paquetes: Paquete[] = [];
+  paquetes: PaqueteM[] = [];
 
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public service: PaqueteMongoProvider,) {
+    public service: PaqueteMongoProvider,
+    public dao: PaqueteDaoProvider,
+    public toastCtrl: ToastController) {
   }
   
   ionViewDidLoad() {
@@ -27,6 +33,16 @@ export class PaqueteMongoPage {
     this.navCtrl.push(AddPaqueteMongoPage);
   }
 
+  goToFav(paqueteaux : PaqueteM) {
+    // implementar agregar un paquete nuevo traido desde mongo a sqlite
+    this.dao.insertM(paqueteaux).then();
+    this.showToast("Paquete agregado a Favoritos");
+  }
+  
+  goToView(paqueteVM:PaqueteM){
+    this.navCtrl.push(PaqueteviewmPage, {mypaqueteM: paqueteVM});
+  }
+  
   loadPaquetes(refresher = null) {
     this.service.all().subscribe(res => {
       this.paquetes = res;
@@ -37,19 +53,12 @@ export class PaqueteMongoPage {
   doRefresh(refresher) {
     this.loadPaquetes(refresher);
   }
-  ///////////
-  // loadPaquetes() {
-  //   this.dao.all()
-  //     .then(data => this.paquetes = data);
-  // }
 
-  // goToAdd() {
-  //   this.navCtrl.parent.push(AddPaquetePage);
-  // }
-  //Se invoca cada que la pantalla es visible
-  // ionViewDidEnter() {
-  //   this.dao.ready()
-  //     .then(() => this.loadPaquetes());
-  // }
-
+  showToast(msg: string) {
+    let toast = this.toastCtrl.create({
+      message: msg,
+      duration: 3000
+    });
+    toast.present();
+  }
 }

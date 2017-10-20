@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 //import { PaqueteDataProvider } from '../../providers/paquetes-data/paquetes-data';
 import { PaqueteDaoProvider } from '../../providers/paquetes-data/paquete-dao';
-import { Paquete } from '../../providers/paquetes-data/paquete';
+import { PaqueteSQL } from '../../providers/paquetes-data/paquete';
 
 @Component({
   selector: 'page-add-paquete',
@@ -10,7 +10,7 @@ import { Paquete } from '../../providers/paquetes-data/paquete';
 })
 export class AddPaquetePage {
 
-  paquete:Paquete;
+  paquete:PaqueteSQL;
 
   constructor(
     public navCtrl: NavController, 
@@ -18,7 +18,7 @@ export class AddPaquetePage {
     public dao: PaqueteDaoProvider
     /*public service:PaqueteDataProvider*/) {
 //      this.paquete = new Paquete(0,"",0,"","");
-      this.paquete = new Paquete();
+      this.paquete = new PaqueteSQL();
   }
 
   save(){

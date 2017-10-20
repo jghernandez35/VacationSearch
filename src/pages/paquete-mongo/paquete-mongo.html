@@ -4,7 +4,7 @@
       <button ion-button menuToggle icon-only > 
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title color="primary">Paquetes Mongo</ion-title>
+      <ion-title color="primary">Paquetes Nuevos</ion-title>
     </ion-navbar>
   </ion-header>}
   
@@ -23,7 +23,10 @@
             <ion-card-title>{{p.nombre}}</ion-card-title>
               <div><ion-icon name="logo-usd"></ion-icon> {{ p.precio}}</div>
               <div><ion-icon name="albums"></ion-icon> {{ p.descripcion}}</div>
+              <button (click)="goToFav(p)" ion-button clear > Guardar en favoritos </button>
+              <button (click)="goToView(p)" ion-button clear > Descripción </button>           
           </ion-card-content>
+          
         </ion-card>
       </ion-col>
     </ion-row>

@@ -28,6 +28,7 @@ export class DatabaseConnectionProvider {
   init():Promise<any> {
     const sql = "CREATE TABLE IF NOT EXISTS paquete ("
       + "id INTEGER PRIMARY KEY AUTOINCREMENT"
+      + ", _id VARCHAR"      
       + ", nombre VARCHAR"
       + ", precio FLOAT"
       + ", descripcion VARCHAR"      

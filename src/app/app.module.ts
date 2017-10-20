@@ -20,6 +20,9 @@ import { AddPaqueteMongoPage } from '../pages/add-paquete-mongo/add-paquete-mong
 import { PaqueteMongoProvider } from '../providers/paquetes-mongo/paquetes-mongo';
 import { PaqueteMongoPage } from '../pages/paquete-mongo/paquete-mongo';
 
+import { PaqueteviewPage } from '../pages/paqueteview/paqueteview';
+import { PaqueteviewmPage } from '../pages/paqueteviewm/paqueteviewm';
+
 import { HeladosPage } from '../pages/helados/helados';
 import { BebidasPage } from '../pages/bebidas/bebidas';
 import { AddHeladoPage } from '../pages/add-helado/add-helado';
@@ -37,6 +40,9 @@ import { HeladosDataProvider } from '../providers/helados-data/helados-data';
     // Mongo
     PaqueteMongoPage,
     AddPaqueteMongoPage,
+
+    PaqueteviewPage,
+    PaqueteviewmPage,
 
 // pendiente de eliminar
     HeladosPage,
@@ -66,6 +72,9 @@ import { HeladosDataProvider } from '../providers/helados-data/helados-data';
     // Mongo
     PaqueteMongoPage,
     AddPaqueteMongoPage,
+
+    PaqueteviewPage,
+    PaqueteviewmPage,
 
 // pemdiente de eliminar
     HeladosPage,
